@@ -7,7 +7,8 @@ var targets = null
 
 
 func _ready():
-	targets = get_node("targets")
+	#targets = get_node("targets")
+	pass
 
 
 func _process(_delta):

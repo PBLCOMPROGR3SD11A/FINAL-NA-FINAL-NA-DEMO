@@ -12,8 +12,7 @@ const DE_ACCELERATION = 7
 func _ready():
 	pass
 
-func _physics_process(delta):
-
+func _physics_process(_delta):
 	if Input.is_action_pressed("ui_right") and Input.is_action_pressed("ui_left"):
 		velocity.x = 0
 	elif Input.is_action_pressed("ui_right"):
@@ -22,7 +21,6 @@ func _physics_process(delta):
 		velocity.x = -SPEED
 	else:
 		velocity.x = lerp(velocity.x,0,0.1)
-
 	if Input.is_action_pressed("ui_up") and Input.is_action_pressed("ui_down"):
 		velocity.z = 0
 	elif Input.is_action_pressed("ui_up"):
@@ -32,5 +30,3 @@ func _physics_process(delta):
 	else:
 		velocity.z = lerp(velocity.z,0,0.1)
 	move_and_slide(velocity)
-
-
