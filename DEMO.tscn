@@ -1,0 +1,102 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://NyxWalk.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Nyx_Apartment_Experiment.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://KinematicBody.gd" type="Script" id=3]
+[ext_resource path="res://Camera.gd" type="Script" id=4]
+
+[sub_resource type="SphereShape" id=1]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Nyx_Apartment_Experiment" type="MeshInstance" parent="."]
+transform = Transform( 6.41023, -0.10223, 0.0416357, 0.101856, 6.41011, 0.0571555, -0.0425402, -0.0564856, 6.41079, 27.9787, -0.694379, -1.63696 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="MeshInstance" type="MeshInstance" parent="Nyx_Apartment_Experiment"]
+transform = Transform( 1, 1.42318e-08, -4.19095e-09, 4.96948e-09, 1, -2.79397e-09, -1.39698e-09, -2.79397e-09, 1, 0, 0, 0 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+material/8 = null
+material/9 = null
+material/10 = null
+material/11 = null
+material/12 = null
+material/13 = null
+material/14 = null
+material/15 = null
+material/16 = null
+material/17 = null
+material/18 = null
+material/19 = null
+material/20 = null
+material/21 = null
+material/22 = null
+material/23 = null
+material/24 = null
+material/25 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="KinematicBody" type="KinematicBody" parent="."]
+transform = Transform( 2.0942, -0.00410315, 0.195557, 1.19908e-08, 2.10285, 0.0441218, -0.1956, -0.0439306, 2.09374, 6.56339, 0.637252, -1.19133 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="NyxWalk" type="MeshInstance" parent="KinematicBody"]
+transform = Transform( 1, 6.98492e-10, 2.23517e-08, 4.07454e-09, 1, 1.86265e-09, 0, -8.00937e-08, 1, 4.30723, 1.55309, -1.27905 )
+mesh = ExtResource( 1 )
+material/0 = null
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape" type="CollisionShape" parent="KinematicBody"]
+transform = Transform( 1, 3.49246e-10, 5.21541e-08, 1.39698e-09, 1, -1.49012e-08, 4.47035e-08, -7.45058e-09, 1, 4.84697, 0.0139748, -0.666051 )
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.921624, -0.199531, 0.332861, 0.0167172, 0.877319, 0.479617, -0.387724, -0.436462, 0.811894, 23.1442, 44.9717, 52.3704 )
+script = ExtResource( 4 )
