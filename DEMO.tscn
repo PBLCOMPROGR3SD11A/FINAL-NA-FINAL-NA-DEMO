@@ -1,17 +1,22 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://NyxWalk.obj" type="ArrayMesh" id=1]
-[ext_resource path="res://Nyx_Apartment_Experiment.obj" type="ArrayMesh" id=2]
-[ext_resource path="res://KinematicBody.gd" type="Script" id=3]
-[ext_resource path="res://Camera.gd" type="Script" id=4]
+[ext_resource path="res://DEMO FILES/Nyx_Apartment_Experiment.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://DEMO FILES/NyxWalk.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://DEMO FILES/Camera.gd" type="Script" id=3]
+[ext_resource path="res://DEMO FILES/KinematicBody.gd" type="Script" id=4]
 
-[sub_resource type="SphereShape" id=1]
+[sub_resource type="PhysicsMaterial" id=3]
+
+[sub_resource type="BoxShape" id=2]
+
+[sub_resource type="CapsuleShape" id=1]
+height = 1.11488
 
 [node name="Spatial" type="Spatial"]
 
 [node name="Nyx_Apartment_Experiment" type="MeshInstance" parent="."]
 transform = Transform( 6.41023, -0.10223, 0.0416357, 0.101856, 6.41011, 0.0571555, -0.0425402, -0.0564856, 6.41079, 27.9787, -0.694379, -1.63696 )
-mesh = ExtResource( 2 )
+mesh = ExtResource( 1 )
 material/0 = null
 material/1 = null
 material/2 = null
@@ -42,56 +47,73 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="MeshInstance" type="MeshInstance" parent="Nyx_Apartment_Experiment"]
-transform = Transform( 1, 1.42318e-08, -4.19095e-09, 4.96948e-09, 1, -2.79397e-09, -1.39698e-09, -2.79397e-09, 1, 0, 0, 0 )
-mesh = ExtResource( 2 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
-material/5 = null
-material/6 = null
-material/7 = null
-material/8 = null
-material/9 = null
-material/10 = null
-material/11 = null
-material/12 = null
-material/13 = null
-material/14 = null
-material/15 = null
-material/16 = null
-material/17 = null
-material/18 = null
-material/19 = null
-material/20 = null
-material/21 = null
-material/22 = null
-material/23 = null
-material/24 = null
-material/25 = null
+[node name="wall 1" type="StaticBody" parent="Nyx_Apartment_Experiment"]
+transform = Transform( 20.5692, -0.73601, 0.123371, -0.736005, -25.6668, -0.239846, 0.123371, -0.239846, 0.998711, -4.29592, 2.73716, -3.41754 )
+physics_material_override = SubResource( 3 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="CollisionShape2" type="CollisionShape" parent="Nyx_Apartment_Experiment/wall 1"]
+transform = Transform( -0.194268, 0.00294954, -0.00668305, 0.00423683, 0.116864, -0.00868668, -0.00543624, -0.00840365, 0.999932, 0.0124093, -0.0185265, -1.04743 )
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall 2" type="StaticBody" parent="Nyx_Apartment_Experiment"]
+transform = Transform( -1.01871, -0.382887, -1.00885, -0.575107, -25.6698, -0.213683, 20.5497, -0.556247, 0.0820841, -10.4849, 2.64194, 0.131934 )
+physics_material_override = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2" type="CollisionShape" parent="Nyx_Apartment_Experiment/wall 2"]
+transform = Transform( -0.194268, 0.00294954, -0.00668305, 0.00423683, 0.116864, -0.00868668, -0.00543624, -0.00840365, 0.999932, 0.0124093, -0.0185265, -1.04743 )
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall 3" type="StaticBody" parent="Nyx_Apartment_Experiment"]
+transform = Transform( -1.01871, -0.382887, -1.00885, -0.575108, -25.6698, -0.213683, 20.5497, -0.556247, 0.0820842, -0.780748, 2.48718, 0.194965 )
+physics_material_override = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2" type="CollisionShape" parent="Nyx_Apartment_Experiment/wall 3"]
+transform = Transform( -0.194268, 0.00294954, -0.00668305, 0.00423683, 0.116864, -0.00868668, -0.00543624, -0.00840365, 0.999932, 0.0124093, -0.0185265, -1.04743 )
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="wall 4" type="StaticBody" parent="Nyx_Apartment_Experiment/wall 3"]
+transform = Transform( 0.0934737, 0.0139626, 0.0495655, 0.19771, 0.996765, 0.00969829, -20.5582, 0.337154, -0.17602, 0.303755, -0.0401952, 3.25959 )
+physics_material_override = SubResource( 3 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="Nyx_Apartment_Experiment/wall 3/wall 4"]
+transform = Transform( -0.194268, 0.00294954, -0.00668305, 0.00423683, 0.116864, -0.00868668, -0.00543624, -0.00840365, 0.999932, 0.0124093, -0.0185265, -1.04743 )
+shape = SubResource( 2 )
 
 [node name="KinematicBody" type="KinematicBody" parent="."]
 transform = Transform( 2.0942, -0.00410315, 0.195557, 1.19908e-08, 2.10285, 0.0441218, -0.1956, -0.0439306, 2.09374, 6.56339, 0.637252, -1.19133 )
-script = ExtResource( 3 )
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="NyxWalk" type="MeshInstance" parent="KinematicBody"]
 transform = Transform( 1, 6.98492e-10, 2.23517e-08, 4.07454e-09, 1, 1.86265e-09, 0, -8.00937e-08, 1, 4.30723, 1.55309, -1.27905 )
-mesh = ExtResource( 1 )
+mesh = ExtResource( 2 )
 material/0 = null
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="CollisionShape" type="CollisionShape" parent="KinematicBody"]
-transform = Transform( 1, 3.49246e-10, 5.21541e-08, 1.39698e-09, 1, -1.49012e-08, 4.47035e-08, -7.45058e-09, 1, 4.84697, 0.0139748, -0.666051 )
+transform = Transform( 2.89886, 0.311602, 0.287971, -0.450801, -0.187821, 4.76226, 0.271973, -3.40223, -0.0587815, 4.28026, 5.87952, -0.891323 )
 shape = SubResource( 1 )
 __meta__ = {
 "_edit_lock_": true
@@ -99,4 +121,5 @@ __meta__ = {
 
 [node name="Camera" type="Camera" parent="."]
 transform = Transform( 0.921624, -0.199531, 0.332861, 0.0167172, 0.877319, 0.479617, -0.387724, -0.436462, 0.811894, 23.1442, 44.9717, 52.3704 )
-script = ExtResource( 4 )
+visible = false
+script = ExtResource( 3 )

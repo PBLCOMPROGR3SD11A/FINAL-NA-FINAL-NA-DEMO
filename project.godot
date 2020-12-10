@@ -25,4 +25,4 @@ window/dpi/allow_hidpi=true
 
 [rendering]
 
-environment/default_environment="res://default_env.tres"
+environment/default_environment="res://DEMO FILES/default_env.tres"
