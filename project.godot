@@ -23,6 +23,10 @@ config/icon="res://icon.png"
 
 window/dpi/allow_hidpi=true
 
+[physics]
+
+common/physics_fps=80
+
 [rendering]
 
 environment/default_environment="res://DEMO FILES/default_env.tres"

@@ -1,9 +1,15 @@
+
 extends KinematicBody
 
-var gravity = -9.8
-var velocity = Vector3(0,0,0)
+var gravity = 100
+var Nyx = Vector3()
+# var velocity = Vector3(0,0,0)
+var velocity = local_direction * SPEED
+var local_direction = global_direction.rotated(vector3(0,1,0),rotation.y)
 var camera
 var ismoving = false 
+var global_direction = Vector3(0,0,1)
+
 
 const SPEED = 80
 const ACCELERATION = 50
@@ -15,6 +21,10 @@ func _ready():
 
 func _physics_process(_delta):
 	#movement toh
+	if not is_on_floor():
+		Nyx.y -= gravity * _delta
+	move_and_slide(Nyx, Vector3.UP)
+	#move_and_slide(Nyx, Vector3.DOWN)
 	if Input.is_action_pressed("ui_right") and Input.is_action_pressed("ui_left"):
 		velocity.x = 0
 		ismoving = false
@@ -42,5 +52,5 @@ func _physics_process(_delta):
 	else:
 		velocity.z = 0
 	velocity = velocity.normalized() * SPEED
-	velocity = move_and_slide(velocity, Vector3.UP)
+	move_and_slide(velocity, Vector3.UP)
 	

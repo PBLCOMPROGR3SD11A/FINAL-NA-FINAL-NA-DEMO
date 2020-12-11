@@ -48,7 +48,7 @@ __meta__ = {
 }
 
 [node name="wall 1" type="StaticBody" parent="Nyx_Apartment_Experiment"]
-transform = Transform( 20.5692, -0.73601, 0.123371, -0.736005, -25.6668, -0.239846, 0.123371, -0.239846, 0.998711, -4.29592, 2.73716, -3.41754 )
+transform = Transform( 36.8723, -0.99601, 0.229263, -0.996004, -25.6627, -0.241535, 0.229263, -0.241535, 0.9994, -4.29592, 2.73716, -3.41754 )
 physics_material_override = SubResource( 1 )
 __meta__ = {
 "_edit_lock_": true
@@ -62,7 +62,7 @@ __meta__ = {
 }
 
 [node name="wall 2" type="StaticBody" parent="Nyx_Apartment_Experiment"]
-transform = Transform( -1.01871, -0.382887, -1.00885, -0.575107, -25.6698, -0.213683, 20.5497, -0.556247, 0.0820841, -10.4849, 2.64194, 0.131934 )
+transform = Transform( -0.654628, -0.388688, -1.00724, -0.0916722, -25.6775, -0.211552, -34.3174, 0.317738, -0.15984, -10.4849, 2.64194, 0.131934 )
 physics_material_override = SubResource( 1 )
 __meta__ = {
 "_edit_lock_": true
@@ -76,26 +76,60 @@ __meta__ = {
 }
 
 [node name="wall 3" type="StaticBody" parent="Nyx_Apartment_Experiment"]
-transform = Transform( -1.01871, -0.382887, -1.00885, -0.575108, -25.6698, -0.213683, 20.5497, -0.556247, 0.0820842, -0.780748, 2.48718, 0.194965 )
+transform = Transform( -0.730149, -0.391312, -0.578293, -0.696789, -25.6678, -0.221066, 33.6822, -0.765462, 0.142777, -0.780748, 2.48718, 0.194965 )
 physics_material_override = SubResource( 1 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="CollisionShape2" type="CollisionShape" parent="Nyx_Apartment_Experiment/wall 3"]
-transform = Transform( -0.194268, 0.00294954, -0.00668305, 0.00423683, 0.116864, -0.00868668, -0.00543624, -0.00840365, 0.999932, 0.0124093, -0.0185265, -1.04743 )
+transform = Transform( -0.194268, 0.00294954, -0.00668305, 0.00423683, 0.116864, -0.00868668, -0.00543618, -0.00840365, 0.999932, 0.0124093, -0.0185265, -1.04743 )
 shape = SubResource( 2 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="wall 4" type="StaticBody" parent="Nyx_Apartment_Experiment/wall 3"]
-transform = Transform( 0.0934737, 0.0139626, 0.0495655, 0.19771, 0.996765, 0.00969829, -20.5582, 0.337154, -0.17602, 0.303755, -0.0401952, 3.25959 )
+[node name="wall 4" type="StaticBody" parent="Nyx_Apartment_Experiment"]
+transform = Transform( 36.4247, -0.988871, 0.226357, -0.988856, -25.6628, -0.241489, 0.226362, -0.241488, 0.999383, -5.00542, 2.65801, 6.72279 )
 physics_material_override = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
 
-[node name="CollisionShape2" type="CollisionShape" parent="Nyx_Apartment_Experiment/wall 3/wall 4"]
-transform = Transform( -0.194268, 0.00294954, -0.00668305, 0.00423683, 0.116864, -0.00868668, -0.00543624, -0.00840365, 0.999932, 0.0124093, -0.0185265, -1.04743 )
+[node name="CollisionShape2" type="CollisionShape" parent="Nyx_Apartment_Experiment/wall 4"]
+transform = Transform( -0.194268, 0.00294954, -0.00668305, 0.00423683, 0.116864, -0.00868669, -0.00543624, -0.00840365, 0.999933, 0.0124093, -0.0185265, -1.04743 )
 shape = SubResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Floor" type="StaticBody" parent="Nyx_Apartment_Experiment"]
+transform = Transform( 51.9381, 0.132157, -0.202361, -0.686637, 8.41474, -0.0959374, -1.30144, 0.0471915, 11.1915, -5.19135, 6.75577, 11.2535 )
+physics_material_override = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2" type="CollisionShape" parent="Nyx_Apartment_Experiment/Floor"]
+transform = Transform( -0.194268, 0.00294954, -0.00668305, 0.00423683, 0.116864, -0.00868667, -0.00543627, -0.00840365, 0.999931, 0.0123757, -0.868904, -1.04955 )
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Ceiling" type="StaticBody" parent="Nyx_Apartment_Experiment"]
+transform = Transform( 51.9383, 0.109893, -0.279537, -0.686457, 8.41502, -0.067206, 1.29334, 0.0532848, 11.19, -5.12547, 13.8301, 11.4066 )
+physics_material_override = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2" type="CollisionShape" parent="Nyx_Apartment_Experiment/Ceiling"]
+transform = Transform( -0.194268, 0.00294954, -0.00668305, 0.00423683, 0.116864, -0.00868667, -0.00543627, -0.00840365, 0.999931, 0.0123757, -0.868904, -1.04955 )
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="KinematicBody" type="KinematicBody" parent="."]
 transform = Transform( 2.0942, -0.00410315, 0.195557, 1.19908e-08, 2.10285, 0.0441218, -0.1956, -0.0439306, 2.09374, 6.56339, 0.637252, -1.19133 )

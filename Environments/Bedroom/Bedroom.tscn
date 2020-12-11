@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Environments/Bedroom/Nyx ApartmentGBFILE.glb" type="PackedScene" id=1]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Nyx ApartmentGBFILE" parent="." instance=ExtResource( 1 )]
+transform = Transform( 6.592, 0, 0, 0, 6, 0, 0, 0, 6, 32.1422, 0.638466, 9.05826 )
