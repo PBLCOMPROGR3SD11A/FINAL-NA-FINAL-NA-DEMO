@@ -1,56 +1,36 @@
 
 extends KinematicBody
 
-var gravity = 100
-var Nyx = Vector3()
-# var velocity = Vector3(0,0,0)
-var velocity = local_direction * SPEED
-var local_direction = global_direction.rotated(vector3(0,1,0),rotation.y)
-var camera
-var ismoving = false 
-var global_direction = Vector3(0,0,1)
+export var gravity = Vector3.DOWN * 20
+export var rot_speed = 10
 
+const SPEED = 15
+const ACCELERATION = 8
 
-const SPEED = 80
-const ACCELERATION = 50
-const DE_ACCELERATION = 40
-
-
-func _ready():
-	pass
+var velocity = Vector3.ZERO
+var is_moving 
+var hv = velocity
+var new_pos = Vector3.normalized() * SPEED
+var Nyx
+var dir = Vector3()
 
 func _physics_process(_delta):
-	#movement toh
-	if not is_on_floor():
-		Nyx.y -= gravity * _delta
-	move_and_slide(Nyx, Vector3.UP)
-	#move_and_slide(Nyx, Vector3.DOWN)
-	if Input.is_action_pressed("ui_right") and Input.is_action_pressed("ui_left"):
-		velocity.x = 0
-		ismoving = false
-	elif Input.is_action_pressed("ui_right"):
-		velocity.x = SPEED
-		set_rotation_degrees(Vector3(0,90,0))
-		ismoving = true
-	elif Input.is_action_pressed("ui_left"):
-		velocity.x = -SPEED
-		set_rotation_degrees(Vector3(0,-90,0))
-		ismoving = true
-	else:
-		velocity.x = 0
-		ismoving = false
-	if Input.is_action_pressed("ui_up") and Input.is_action_pressed("ui_down"):
-		velocity.z = 0
-	elif Input.is_action_pressed("ui_up"):
-		velocity.z = -SPEED
-		set_rotation_degrees(Vector3(0,180,0))
-		ismoving = true
-	elif Input.is_action_pressed("ui_down"):
-		velocity.z = SPEED
-		set_rotation_degrees(Vector3(0,0,0))
-		ismoving = true
-	else:
-		velocity.z = 0
-	velocity = velocity.normalized() * SPEED
-	move_and_slide(velocity, Vector3.UP)
 	
+	get_input(_delta)
+	print(gravity)
+	
+func get_input(_delta):
+	
+	var y = velocity.y
+	velocity = Vector3.ZERO
+	if Input.is_action_pressed("forward"):
+		velocity += transform.basis.z * SPEED
+	if Input.is_action_pressed("back"):
+		velocity += -transform.basis.z * SPEED
+	if Input.is_action_pressed("right"):
+		rotate_y(-rot_speed * _delta)
+	if Input.is_action_pressed("left"):
+		rotate_y(rot_speed * _delta)
+	velocity.y = y
+	velocity += gravity * _delta
+	velocity = move_and_slide(velocity, Vector3.UP)
