@@ -1,0 +1,148 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Nyx_Phone.png" type="Texture" id=1]
+[ext_resource path="res://item_slot.png" type="Texture" id=2]
+[ext_resource path="res://Inventory.png" type="Texture" id=3]
+[ext_resource path="res://DEMO FILES/Title Background.png" type="Texture" id=4]
+[ext_resource path="res://Slot.gd" type="Script" id=5]
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 18, 18 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+rect_scale = Vector2( 0.532626, 0.556898 )
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1694.0
+margin_bottom = 1080.0
+rect_scale = Vector2( 0.603395, 0.556096 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="TextureRect"]
+margin_left = 271.876
+margin_top = 211.078
+margin_right = 311.876
+margin_bottom = 251.078
+rect_scale = Vector2( 11.2645, 14.3262 )
+custom_constants/vseparation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Slot1" type="Panel" parent="TextureRect/GridContainer"]
+margin_right = 40.0
+margin_bottom = 3.0
+rect_min_size = Vector2( 40, 3 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 5 )
+
+[node name="Slot2" type="Panel" parent="TextureRect/GridContainer"]
+margin_top = 3.0
+margin_right = 40.0
+margin_bottom = 6.0
+rect_min_size = Vector2( 40, 3 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 5 )
+
+[node name="Slot3" type="Panel" parent="TextureRect/GridContainer"]
+margin_top = 6.0
+margin_right = 40.0
+margin_bottom = 9.0
+rect_min_size = Vector2( 40, 3 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 5 )
+
+[node name="Slot4" type="Panel" parent="TextureRect/GridContainer"]
+margin_top = 9.0
+margin_right = 40.0
+margin_bottom = 12.0
+rect_min_size = Vector2( 40, 3 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 5 )
+
+[node name="Slot5" type="Panel" parent="TextureRect/GridContainer"]
+margin_top = 12.0
+margin_right = 40.0
+margin_bottom = 15.0
+rect_min_size = Vector2( 40, 3 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 5 )
+
+[node name="Slot6" type="Panel" parent="TextureRect/GridContainer"]
+margin_top = 15.0
+margin_right = 40.0
+margin_bottom = 18.0
+rect_min_size = Vector2( 40, 3 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 5 )
+
+[node name="Slot7" type="Panel" parent="TextureRect/GridContainer"]
+margin_top = 18.0
+margin_right = 40.0
+margin_bottom = 21.0
+rect_min_size = Vector2( 40, 3 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 5 )
+
+[node name="Slot8" type="Panel" parent="TextureRect/GridContainer"]
+margin_top = 21.0
+margin_right = 40.0
+margin_bottom = 24.0
+rect_min_size = Vector2( 40, 3 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 5 )
+
+[node name="Slot9" type="Panel" parent="TextureRect/GridContainer"]
+margin_top = 24.0
+margin_right = 40.0
+margin_bottom = 27.0
+rect_min_size = Vector2( 40, 3 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 5 )
+
+[node name="Slot10" type="Panel" parent="TextureRect/GridContainer"]
+margin_top = 27.0
+margin_right = 40.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 40, 3 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 5 )
+
+[node name="Slot11" type="Panel" parent="TextureRect/GridContainer"]
+margin_top = 30.0
+margin_right = 40.0
+margin_bottom = 33.0
+rect_min_size = Vector2( 40, 3 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 5 )
+
+[node name="Slot12" type="Panel" parent="TextureRect/GridContainer"]
+margin_top = 33.0
+margin_right = 40.0
+margin_bottom = 36.0
+rect_min_size = Vector2( 40, 3 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 5 )
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+margin_left = 663.375
+margin_top = 11.2246
+margin_right = 1754.37
+margin_bottom = 166.225
+rect_scale = Vector2( 0.320318, 0.330341 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

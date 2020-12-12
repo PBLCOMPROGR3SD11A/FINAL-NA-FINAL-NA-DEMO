@@ -17,7 +17,7 @@ var dir = Vector3()
 func _physics_process(_delta):
 	
 	get_input(_delta)
-	print(gravity)
+	#print(gravity)
 	
 func get_input(_delta):
 	
