@@ -8,13 +8,15 @@ position = Vector2( -87.7245, -81.8849 )
 rotation = 0.0116677
 script = ExtResource( 1 )
 
-[node name="Item" type="TextureRect" parent="."]
-margin_left = 93.9873
-margin_top = 80.957
-margin_right = 1901.99
-margin_bottom = 313.957
-rect_scale = Vector2( 0.0114303, 0.0107145 )
+[node name="Items" type="TextureRect" parent="."]
+margin_left = 93.0093
+margin_top = 81.1118
+margin_right = 1901.01
+margin_bottom = 314.112
+rect_rotation = -0.307944
+rect_scale = Vector2( 0.011, 0.01 )
 texture = ExtResource( 2 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
