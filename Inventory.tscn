@@ -122,10 +122,10 @@ custom_styles/panel = SubResource( 1 )
 script = ExtResource( 5 )
 
 [node name="TextureRect2" type="TextureRect" parent="."]
-margin_left = 172.02
-margin_top = 123.668
-margin_right = 1263.02
-margin_bottom = 278.669
+margin_left = 172.583
+margin_top = 124.777
+margin_right = 1263.58
+margin_bottom = 279.778
 rect_scale = Vector2( 0.239247, 0.247502 )
 texture = ExtResource( 3 )
 __meta__ = {
