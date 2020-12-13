@@ -19,6 +19,10 @@ config/name="Nyx Epiviosi"
 run/main_scene="res://DEMO.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+global="*res://global.gd"
+
 [display]
 
 window/dpi/allow_hidpi=true
