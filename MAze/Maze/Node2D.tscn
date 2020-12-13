@@ -1,0 +1,1044 @@
+[gd_scene load_steps=14 format=2]
+
+[ext_resource path="res://Maze/Maze.png" type="Texture" id=1]
+[ext_resource path="res://Pill/Pill.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Maze/Node2D.gd" type="Script" id=3]
+
+[sub_resource type="SegmentShape2D" id=1]
+a = Vector2( -323.952, 612.427 )
+b = Vector2( 6.80566, -50.9231 )
+
+[sub_resource type="SegmentShape2D" id=2]
+a = Vector2( 0.367432, 77.1207 )
+b = Vector2( 102.661, -100.615 )
+
+[sub_resource type="SegmentShape2D" id=3]
+a = Vector2( -61.7369, 121.761 )
+b = Vector2( -10.3212, 32.3754 )
+
+[sub_resource type="SegmentShape2D" id=4]
+a = Vector2( -12.9708, -2.34866 )
+b = Vector2( -119.561, -2.51685 )
+
+[sub_resource type="SegmentShape2D" id=5]
+a = Vector2( -1.59894, 178.898 )
+b = Vector2( -108.047, -5.07385 )
+
+[sub_resource type="SegmentShape2D" id=6]
+a = Vector2( -46.2635, -51.97 )
+b = Vector2( 60.3843, 131.794 )
+
+[sub_resource type="SegmentShape2D" id=7]
+a = Vector2( -60.8589, -86.7372 )
+b = Vector2( -8.35144, 3.8927 )
+
+[sub_resource type="SegmentShape2D" id=8]
+a = Vector2( -198.408, 10.4214 )
+b = Vector2( 13.651, 10.1962 )
+
+[sub_resource type="SegmentShape2D" id=9]
+a = Vector2( -1.42188, 90.4827 )
+b = Vector2( -2.36969, 9.15454 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 19.2535, 14.2175 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 452.206, 423.99 )
+scale = Vector2( 0.46995, 0.405312 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="leftdiagonallong" type="StaticBody2D" parent="Sprite"]
+position = Vector2( -563.57, 420.708 )
+scale = Vector2( 0.463969, 0.400859 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/leftdiagonallong"]
+position = Vector2( -53.5848, 232.345 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Sprite/leftdiagonallong"]
+position = Vector2( 1066.22, -2017.4 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Sprite/leftdiagonallong"]
+position = Vector2( 731.634, -2247.38 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Sprite/leftdiagonallong"]
+position = Vector2( 956.714, -2242.42 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Sprite/leftdiagonallong"]
+position = Vector2( 2521.21, -3130.57 )
+scale = Vector2( 1.00355, 1.0198 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Sprite/leftdiagonallong"]
+position = Vector2( 1520.53, -226.943 )
+shape = SubResource( 1 )
+
+[node name="leftdiagonalmed" type="StaticBody2D" parent="Sprite"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/leftdiagonalmed"]
+position = Vector2( -427.069, -399.624 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Sprite/leftdiagonalmed"]
+position = Vector2( -745.347, 145.911 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Sprite/leftdiagonalmed"]
+position = Vector2( -739.66, -223.363 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Sprite/leftdiagonalmed"]
+position = Vector2( -584.21, 592.116 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Sprite/leftdiagonalmed"]
+position = Vector2( -10.004, 320.088 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Sprite/leftdiagonalmed"]
+position = Vector2( -165.362, -130.477 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Sprite/leftdiagonalmed"]
+position = Vector2( -636.566, 323.836 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Sprite/leftdiagonalmed"]
+position = Vector2( -61.2946, -131.996 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Sprite/leftdiagonalmed"]
+position = Vector2( -64.8492, 52.8894 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Sprite/leftdiagonalmed"]
+position = Vector2( 42.1906, 50.8459 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Sprite/leftdiagonalmed"]
+position = Vector2( 349.754, 235.715 )
+shape = SubResource( 2 )
+
+[node name="leftdiagonalshort" type="StaticBody2D" parent="Sprite"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 467.528, -82.4567 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 465.711, 281.414 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D56" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 519.616, 547.463 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D55" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 518.908, 367.767 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D34" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 621.933, 368.286 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D35" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 621.933, 549.423 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D36" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 620.339, 730.56 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D37" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 413.105, 730.56 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D38" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 100.659, 730.56 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D53" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -105.754, 727.648 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 363.226, 458.543 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 310.085, 370.521 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 259.475, 276.631 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -108.712, 190.077 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -155.526, 93.253 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -212.462, 11.0994 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -264.337, -81.3232 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D54" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -575.423, 99.6946 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D25" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -418.966, 188.534 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D26" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -315.349, 188.534 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D27" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -208.543, 365.975 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D28" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -313.755, 367.823 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D39" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -680.401, 460.24 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D40" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -678.807, 280.951 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D41" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -678.903, -85.0195 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D42" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -679.863, -442.71 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D43" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -678.147, -621.15 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D44" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -680.401, -802.175 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D45" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -679.274, -980.157 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D46" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -54.9723, -981.06 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D29" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -159.126, 637.68 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D30" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -52.3204, 456.543 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D31" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -159.221, 457.303 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D32" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 49.7029, 639.529 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D33" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 365.337, 633.984 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -418.697, -169.345 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -472.402, -262.754 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -573.058, -264.702 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -471.7, -803.427 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -2.43103, -710.678 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -53.041, -803.1 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D23" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -160.587, -800.166 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D57" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -523.483, -533.381 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D24" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( -314.947, -891.122 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 310.9, -171.579 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 258.711, -262.733 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 154.271, -262.733 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 259.715, -445.541 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 206.254, -533.006 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 205.832, -710.513 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 518.943, -894.368 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D49" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 621.636, -350.862 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D50" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 621.636, -167.876 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D51" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 621.636, 9.56421 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D52" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 621.636, 187.005 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D48" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 621.921, -531.36 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D47" type="CollisionShape2D" parent="Sprite/leftdiagonalshort"]
+position = Vector2( 623.23, -714.219 )
+shape = SubResource( 3 )
+
+[node name="straight" type="StaticBody2D" parent="Sprite"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 3.14649, 38.562 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D42" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 107.449, -138.57 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -52.6248, 133.205 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -152.597, 312.264 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -210.534, 223.309 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -415.612, 402.031 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D40" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -414.625, 583.576 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -571.97, -46.6893 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -517.127, -139.153 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -520.629, -317.265 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -363.394, -407.984 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D41" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 51.7712, -1008.05 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D32" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -204.291, -139.15 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D33" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -255.924, -47.4003 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -415.304, -498.704 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -520.629, -677.525 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D31" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -412.599, -858.662 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D43" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -363.197, -770.169 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -569.526, -768.194 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -101.586, -859.836 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D23" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 159.319, -944.618 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D34" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -158.522, -770.347 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D37" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 158.814, -588.704 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D35" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -206.09, -677.495 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 315.528, -677.073 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D24" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 368.213, -769.984 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D49" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 523.114, -860.314 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 522.555, -497.872 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 470.979, -410.115 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 420.933, -317.661 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D45" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 316.422, -498.613 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D46" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 523.071, -677.878 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 366.366, -228.432 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 524.931, -138.505 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 420.725, 41.9822 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 262.361, -48.0159 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 263.033, 494.278 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D38" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 212.562, 222.655 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D44" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 369.551, 311.079 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D39" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 6.05298, 761.984 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D25" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 55.4263, 311.358 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D26" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -0.892883, 222.879 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D27" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -205.18, 581.835 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D28" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -257.653, 671.518 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D47" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( -154.949, 851.528 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D29" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 469.636, 672.903 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D30" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 418.624, 404.894 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D48" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 262.587, 673.072 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D36" type="CollisionShape2D" parent="Sprite/straight"]
+position = Vector2( 315.601, 760.805 )
+shape = SubResource( 4 )
+
+[node name="rightdiagonallong" type="StaticBody2D" parent="Sprite"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/rightdiagonallong"]
+position = Vector2( -320.472, -318.672 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Sprite/rightdiagonallong"]
+position = Vector2( -633.622, -676.473 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Sprite/rightdiagonallong"]
+position = Vector2( -322.783, -677.669 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Sprite/rightdiagonallong"]
+position = Vector2( -111.878, -674.995 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Sprite/rightdiagonallong"]
+position = Vector2( -6.54919, -677.193 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Sprite/rightdiagonallong"]
+position = Vector2( 97.5111, -857.908 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Sprite/rightdiagonallong"]
+position = Vector2( 459.915, -227.468 )
+shape = SubResource( 5 )
+
+[node name="rightdiagonalmed" type="StaticBody2D" parent="Sprite"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/rightdiagonalmed"]
+position = Vector2( -540.24, -359.523 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Sprite/rightdiagonalmed"]
+position = Vector2( 242.764, 89.4268 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Sprite/rightdiagonalmed"]
+position = Vector2( 294.139, -0.0594478 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Sprite/rightdiagonalmed"]
+position = Vector2( 554.709, 269.363 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Sprite/rightdiagonalmed"]
+position = Vector2( 557.24, 96.2534 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Sprite/rightdiagonalmed"]
+position = Vector2( -694.028, 634.197 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Sprite/rightdiagonalmed"]
+position = Vector2( -539.758, 362.676 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Sprite/rightdiagonalmed"]
+position = Vector2( -382.717, 451.389 )
+shape = SubResource( 6 )
+
+[node name="rightdiagonalsmall" type="StaticBody2D" parent="Sprite"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 152.815, -54.3991 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 49.4682, -235.038 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -52.5933, -230.255 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 309.491, -324.404 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 361.757, -415.204 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 205.233, -502.753 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 413.461, -685.246 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 619.768, -859.902 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 621.336, -682.917 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 620.332, -505.788 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 619.58, -323.04 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 623.341, -140.729 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 622.589, 41.5813 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 619.135, 576.52 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 621.621, 759.714 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 517.004, 757.792 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 518.541, 577.554 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 413.332, 575.904 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 360.958, 663 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 203.612, 755.318 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 154.427, 488.983 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 258.888, 307.035 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D23" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 101.243, 215.695 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D24" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -211.163, 396.904 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D50" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -161.399, 125.683 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D51" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -106.825, 33.0882 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D52" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 152.628, 127.758 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D53" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 360.191, -53.7776 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D58" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 517.082, 399.534 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D54" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 466.325, -232.471 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D55" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 516.292, -325.562 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D56" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( 518.082, -503.332 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D25" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -313.922, 398.134 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D26" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -316.765, 215.695 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D27" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -419.923, 220.153 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D28" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -418.187, 35.4542 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D29" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -366.054, -53.5671 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D30" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -314.679, -859.823 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D39" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -472.871, -774.496 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D37" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -574.973, -773.618 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D38" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -680.658, -414.745 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D40" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -683.231, -235.716 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D41" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -681.222, -57.5656 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D42" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -683.231, 122.913 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D43" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -679.214, 306.885 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D44" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -678.21, 489.693 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D45" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -681.223, 844.829 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D46" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -471.215, 846.542 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D47" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -418.773, 757.238 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D48" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -367.904, 666.679 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D49" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -160.289, 664.542 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D35" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -55.5886, -770.166 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D36" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -55.5886, -770.166 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D33" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -680.905, -772.78 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D31" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -473.312, -595.467 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D57" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -524.479, -502.225 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D32" type="CollisionShape2D" parent="Sprite/rightdiagonalsmall"]
+position = Vector2( -211.737, -503.126 )
+shape = SubResource( 7 )
+
+[node name="straightlong" type="StaticBody2D" parent="Sprite"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( -443.371, 31.6008 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( -392.118, 119.988 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( -22.8097, 389.505 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( -229.412, 749.122 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( -488.561, 839.127 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( -279.264, 838.732 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( 27.4151, 480.168 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( 289.406, 570.247 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( 133.188, 659.925 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( 125.965, 842.219 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( 338.629, 841.065 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( 552.405, 838.696 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( 499.561, 209.523 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( 132.011, -420.895 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( 185.443, -333.214 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( 78.9446, -509.783 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D23" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( 240.494, -782.267 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D24" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( 189.884, -873.223 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D25" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( 395.264, -873.31 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( -78.9551, -958.61 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( -290.329, -957.957 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( -496.964, -957.957 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( 446.21, -601.054 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( 547.242, -959.068 )
+shape = SubResource( 8 )
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="Sprite/straightlong"]
+position = Vector2( 332.298, -957.253 )
+shape = SubResource( 8 )
+
+[node name="standingling" type="StaticBody2D" parent="Sprite"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/standingling"]
+position = Vector2( -166.924, 838.531 )
+shape = SubResource( 9 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Sprite/standingling"]
+position = Vector2( -165.6, 920.116 )
+shape = SubResource( 9 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Sprite/standingling"]
+position = Vector2( -69.2372, 843.794 )
+shape = SubResource( 9 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Sprite/standingling"]
+position = Vector2( -69.2372, 925.078 )
+shape = SubResource( 9 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Sprite/standingling"]
+position = Vector2( 42.0479, -1035.79 )
+shape = SubResource( 9 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Sprite/standingling"]
+position = Vector2( -63.3845, -1036.34 )
+shape = SubResource( 9 )
+
+[node name="lose" type="Label" parent="."]
+visible = false
+margin_left = 398.396
+margin_top = 230.944
+margin_right = 475.396
+margin_bottom = 244.944
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "!?You Lose?!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="win" type="Label" parent="."]
+visible = false
+margin_left = 404.356
+margin_top = 231.008
+margin_right = 464.356
+margin_bottom = 262.008
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "!You Win!
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Pill" parent="." instance=ExtResource( 2 )]
+position = Vector2( 440.598, 41.658 )
+scale = Vector2( 0.462998, 0.413055 )
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 395.61, 819.4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -0.285187, 0.598999 )
+shape = SubResource( 10 )
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
