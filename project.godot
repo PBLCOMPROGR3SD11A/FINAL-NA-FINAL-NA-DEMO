@@ -16,11 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Nyx Epiviosi"
-<<<<<<< HEAD
 run/main_scene="res://Livingroom.tscn"
-=======
-run/main_scene="res://Main Menu.tscn"
->>>>>>> a94933e84e10a3b1f088b154df5991771f538a8b
 config/icon="res://Nyx_Epiviosi_Icon.png"
 
 [display]
