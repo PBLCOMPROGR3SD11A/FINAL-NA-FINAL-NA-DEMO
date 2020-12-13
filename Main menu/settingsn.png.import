@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/placeholder-1.png-101e9c49c1758b9ddb340c406113c25d.stex"
+path="res://.import/settingsn.png-7f4ed191d341b837da71a087b84d60f3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/background/placeholder-1.png"
-dest_files=[ "res://.import/placeholder-1.png-101e9c49c1758b9ddb340c406113c25d.stex" ]
+source_file="res://Main menu/settingsn.png"
+dest_files=[ "res://.import/settingsn.png-7f4ed191d341b837da71a087b84d60f3.stex" ]
 
 [params]
 
