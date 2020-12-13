@@ -1,0 +1,65 @@
+[gd_resource type="Animation" format=2]
+
+[resource]
+resource_name = "RealSlide"
+step = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("questionHolder/News_10/News 10:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 564.151, 283.691 ), Vector2( 1180.25, 283.691 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("questionHolder/News_8/News 8:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 564.151, 283.691 ), Vector2( 1180.25, 283.691 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("questionHolder/News_6/News 6:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 564.151, 283.691 ), Vector2( 1180.25, 283.691 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("questionHolder/News_4/News 4:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 564.151, 283.691 ), Vector2( 1180.25, 283.691 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("questionHolder/News_2/News 2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 564.151, 283.691 ), Vector2( 1180.25, 283.691 ) ]
+}

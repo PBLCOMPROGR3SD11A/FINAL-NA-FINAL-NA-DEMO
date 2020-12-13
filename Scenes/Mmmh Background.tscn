@@ -1,0 +1,12 @@
+[gd_scene format=2]
+
+[node name="Mmmh Background" type="CanvasLayer"]
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+self_modulate = Color( 0, 0, 0, 1 )
+margin_right = 1025.0
+margin_bottom = 599.0
+__meta__ = {
+"_edit_use_anchors_": false
+}

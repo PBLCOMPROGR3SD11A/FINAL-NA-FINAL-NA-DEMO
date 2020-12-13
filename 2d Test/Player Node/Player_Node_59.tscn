@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Da Boi.gd" type="Script" id=1]
+[ext_resource path="res://130823369_660373874656537_3946619969328500905_n.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 48, 8.72876 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 56, 16.7288 )
+
+[node name="Player_Node_59" type="Node2D"]
+position = Vector2( 364.579, 320.367 )
+
+[node name="Da Boi" type="KinematicBody2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Da Boi"]
+position = Vector2( -558.986, -329.105 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="Da Boi"]
+position = Vector2( -551.076, -238.86 )
+scale = Vector2( 0.325712, 0.353413 )
+texture = ExtResource( 2 )
+
+[node name="Detect " type="Area2D" parent="Da Boi"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Da Boi/Detect "]
+position = Vector2( -556.579, -328.367 )
+shape = SubResource( 2 )

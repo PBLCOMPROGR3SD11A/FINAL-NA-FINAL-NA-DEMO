@@ -1,0 +1,220 @@
+[gd_scene load_steps=28 format=2]
+
+[ext_resource path="res://Animations/FakeSlide.tres" type="Animation" id=1]
+[ext_resource path="res://Animations/RealSlide.tres" type="Animation" id=2]
+[ext_resource path="res://Sprites/130859712_383978519381171_5320660361967341607_n.jpg" type="Texture" id=3]
+[ext_resource path="res://Assets/Artboard 5150 PPI.jpg" type="Texture" id=4]
+[ext_resource path="res://Sprites/130572419_506319780278935_6007430149061355646_n (2).png" type="Texture" id=5]
+[ext_resource path="res://Sprites/130572419_506319780278935_6007430149061355646_n (3).png" type="Texture" id=6]
+[ext_resource path="res://Assets/Artboard 3150 PPI.jpg" type="Texture" id=7]
+[ext_resource path="res://Assets/Artboard 6150 PPI.jpg" type="Texture" id=8]
+[ext_resource path="res://Assets/Artboard 9150 PPI.jpg" type="Texture" id=9]
+[ext_resource path="res://Assets/Artboard 7150 PPI.jpg" type="Texture" id=10]
+[ext_resource path="res://Assets/Artboard 8150 PPI.jpg" type="Texture" id=11]
+[ext_resource path="res://Assets/Artboard 4150 PPI.jpg" type="Texture" id=12]
+[ext_resource path="res://Assets/Artboard 10150 PPI.jpg" type="Texture" id=13]
+[ext_resource path="res://Assets/Artboard 1150 PPI.jpg" type="Texture" id=14]
+[ext_resource path="res://Assets/Artboard 2150 PPI.jpg" type="Texture" id=15]
+[ext_resource path="res://Scripts/question.gd" type="Script" id=16]
+[ext_resource path="res://Scripts/News_7.gd" type="Script" id=17]
+[ext_resource path="res://Scripts/News_8.gd" type="Script" id=18]
+[ext_resource path="res://Scripts/News_10.gd" type="Script" id=19]
+[ext_resource path="res://Scripts/News_4.gd" type="Script" id=20]
+[ext_resource path="res://Scripts/News_5.gd" type="Script" id=21]
+[ext_resource path="res://Scripts/News_6.gd" type="Script" id=22]
+[ext_resource path="res://Scripts/News_9.gd" type="Script" id=23]
+[ext_resource path="res://Scripts/News_2.gd" type="Script" id=24]
+[ext_resource path="res://Scripts/News_3.gd" type="Script" id=25]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Control
+
+export (NodePath) var questionTextPath
+export (NodePath) var RealButtonPath
+export (NodePath) var FakeButtonPath 
+export (NodePath) var animatorPath
+export (NodePath) var timerPath
+export (NodePath) var questionHolderPath
+#Bruh...
+"
+
+[sub_resource type="GDScript" id=2]
+script/source = "extends Button
+export (NodePath) var animator
+
+func _Real_Button_pressed():
+	$news_1.hide()
+	if _Real_Button_pressed():
+		animator.play(\"RealSlide\")
+
+func _Fake_Button_pressed():
+	$news_1.hide()
+	if _Fake_Button_pressed():
+		animator.play(\"FakeSlide\")
+
+"
+
+[node name="MainScene" type="Control"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1024.0
+margin_top = -600.0
+script = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+questionTextPath = NodePath("Da Instruction")
+RealButtonPath = NodePath("Buttons Layer/Real Button")
+FakeButtonPath = NodePath("Buttons Layer/Real Button/Fake Button")
+animatorPath = NodePath("animation")
+timerPath = NodePath("Timer")
+questionHolderPath = NodePath("questionHolder")
+
+[node name="Background " type="Sprite" parent="."]
+position = Vector2( 511.227, 262.552 )
+scale = Vector2( 0.639433, 0.430417 )
+texture = ExtResource( 3 )
+
+[node name="Buttons Layer" type="CanvasLayer" parent="."]
+
+[node name="Real Button" type="Button" parent="Buttons Layer"]
+margin_left = 715.0
+margin_top = 243.0
+margin_right = 803.0
+margin_bottom = 327.0
+action_mode = 0
+script = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+animator = NodePath("../../animation")
+
+[node name="Real Sprite" type="Sprite" parent="Buttons Layer/Real Button"]
+position = Vector2( 45.2768, 42.3347 )
+scale = Vector2( 0.113167, 0.0824361 )
+texture = ExtResource( 6 )
+
+[node name="Fake Button" type="Button" parent="Buttons Layer/Real Button"]
+margin_left = -390.018
+margin_top = -1.05499
+margin_right = -302.018
+margin_bottom = 82.945
+action_mode = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fake Sprite" type="Sprite" parent="Buttons Layer/Real Button/Fake Button"]
+position = Vector2( 45.4358, 41.4269 )
+scale = Vector2( 0.119951, 0.0968585 )
+texture = ExtResource( 5 )
+
+[node name="Da Instruction" type="Label" parent="."]
+margin_left = 373.948
+margin_top = 50.7708
+margin_right = 754.948
+margin_bottom = 95.7706
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Identify if the article given is Fake or Real"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Answer Layer" type="CanvasLayer" parent="."]
+
+[node name="News Layers" type="CanvasLayer" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="questionHolder" type="Node" parent="."]
+
+[node name="News_1" type="Node" parent="questionHolder"]
+script = ExtResource( 16 )
+
+[node name="News 1" type="Sprite" parent="questionHolder/News_1"]
+position = Vector2( 564.151, 283.691 )
+scale = Vector2( 0.121, 0.119 )
+texture = ExtResource( 14 )
+
+[node name="News_2" type="Node" parent="questionHolder"]
+script = ExtResource( 24 )
+
+[node name="News 2" type="Sprite" parent="questionHolder/News_2"]
+position = Vector2( 564.151, 283.691 )
+scale = Vector2( 0.121, 0.119 )
+texture = ExtResource( 13 )
+
+[node name="News_3" type="Node" parent="questionHolder"]
+script = ExtResource( 25 )
+
+[node name="News 3" type="Sprite" parent="questionHolder/News_3"]
+position = Vector2( 564.151, 283.691 )
+scale = Vector2( 0.121, 0.119 )
+texture = ExtResource( 15 )
+
+[node name="News_4" type="Node" parent="questionHolder"]
+script = ExtResource( 20 )
+
+[node name="News 4" type="Sprite" parent="questionHolder/News_4"]
+position = Vector2( 564.151, 283.691 )
+scale = Vector2( 0.121, 0.119 )
+texture = ExtResource( 9 )
+
+[node name="News_5" type="Node" parent="questionHolder"]
+script = ExtResource( 21 )
+
+[node name="News 5" type="Sprite" parent="questionHolder/News_5"]
+position = Vector2( 564.151, 283.691 )
+scale = Vector2( 0.121, 0.119 )
+texture = ExtResource( 7 )
+
+[node name="News_6" type="Node" parent="questionHolder"]
+script = ExtResource( 22 )
+
+[node name="News 6" type="Sprite" parent="questionHolder/News_6"]
+position = Vector2( 564.151, 283.691 )
+scale = Vector2( 0.121, 0.119 )
+texture = ExtResource( 11 )
+
+[node name="News_7" type="Node" parent="questionHolder"]
+script = ExtResource( 17 )
+
+[node name="News 7" type="Sprite" parent="questionHolder/News_7"]
+position = Vector2( 564.151, 283.691 )
+scale = Vector2( 0.121, 0.119 )
+texture = ExtResource( 12 )
+
+[node name="News_8" type="Node" parent="questionHolder"]
+script = ExtResource( 18 )
+
+[node name="News 8" type="Sprite" parent="questionHolder/News_8"]
+position = Vector2( 564.151, 283.691 )
+scale = Vector2( 0.121, 0.119 )
+texture = ExtResource( 10 )
+
+[node name="News_9" type="Node" parent="questionHolder"]
+script = ExtResource( 23 )
+
+[node name="News 9" type="Sprite" parent="questionHolder/News_9"]
+position = Vector2( 564.151, 283.691 )
+scale = Vector2( 0.121, 0.119 )
+texture = ExtResource( 4 )
+
+[node name="News_10" type="Node" parent="questionHolder"]
+script = ExtResource( 19 )
+
+[node name="News 10" type="Sprite" parent="questionHolder/News_10"]
+position = Vector2( 564.151, 283.691 )
+scale = Vector2( 0.121, 0.119 )
+texture = ExtResource( 8 )
+
+[node name="animation" type="AnimationPlayer" parent="."]
+anims/FakeSlide = ExtResource( 1 )
+anims/RealSlide = ExtResource( 2 )
+[connection signal="pressed" from="Buttons Layer/Real Button" to="." method="_on_Real_Button_pressed"]
+[connection signal="pressed" from="Buttons Layer/Real Button/Fake Button" to="." method="_on_Fake_Button_pressed"]
