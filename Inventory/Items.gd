@@ -5,8 +5,8 @@ func _ready():
 		$Items.texture = load("res://Inventory/Items/Absolutely.png")
 	else:
 		$Items.texture = load("res://Inventory/Items/Album.png")
-		$Items.rect_scale.x = 0.007
-		$Items.rect_scale.y = 0.006
+		$Items.rect_scale.x = 0.01
+		$Items.rect_scale.y = 0.007
 	
 		#$Bape.texture = load("res://Inventory/Items/Bape.png")
 		#$BlueCross.texture = load("res://Inventory/Items/BlueCross.png")
