@@ -1,19 +1,18 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
-[ext_resource path="res://Main Menu stuff/Menu.png" type="Texture" id=1]
-[ext_resource path="res://Main Menu.gd" type="Script" id=2]
+[ext_resource path="res://Main menu/baclground.png" type="Texture" id=1]
+[ext_resource path="res://scripts/Main Menu.gd" type="Script" id=2]
 [ext_resource path="res://continuebutton.gd" type="Script" id=3]
-[ext_resource path="res://Main Menu stuff/Start button.png" type="Texture" id=4]
-[ext_resource path="res://Main Menu stuff/Continue button.png" type="Texture" id=5]
-[ext_resource path="res://Main Menu stuff/Start button copy.png" type="Texture" id=6]
-[ext_resource path="res://Main Menu stuff/Continue button - Copy.png" type="Texture" id=7]
-[ext_resource path="res://Main Menu stuff/settings copy  .png" type="Texture" id=8]
-[ext_resource path="res://Main Menu stuff/Settings button.png" type="Texture" id=9]
-[ext_resource path="res://Main Menu stuff/Exit button.png" type="Texture" id=10]
-[ext_resource path="res://Main Menu stuff/Exit button - Copy.png" type="Texture" id=11]
-[ext_resource path="res://playbutton.gd" type="Script" id=12]
+[ext_resource path="res://Main menu/settings.png" type="Texture" id=4]
+[ext_resource path="res://Main menu/settingsn.png" type="Texture" id=5]
+[ext_resource path="res://Main menu/exit.png" type="Texture" id=7]
+[ext_resource path="res://Main menu/continue.png" type="Texture" id=8]
+[ext_resource path="res://Main menu/exitn.png" type="Texture" id=9]
+[ext_resource path="res://Main menu/play.png" type="Texture" id=10]
+[ext_resource path="res://Main menu/continuen.png" type="Texture" id=11]
+[ext_resource path="res://scripts/playbutton.gd" type="Script" id=12]
 [ext_resource path="res://Music/button.wav" type="AudioStream" id=13]
-[ext_resource path="res://exitbutton.gd" type="Script" id=14]
+[ext_resource path="res://scripts/exitbutton.gd" type="Script" id=14]
 [ext_resource path="res://settingbutton.gd" type="Script" id=15]
 
 [node name="Node2D" type="Node2D"]
@@ -39,12 +38,12 @@ texture = ExtResource( 1 )
 margin_left = 135.0
 margin_top = 150.0
 margin_right = 266.0
-margin_bottom = 348.0
+margin_bottom = 374.0
 rect_scale = Vector2( 0.592358, 0.427426 )
-icon = ExtResource( 6 )
 align = 0
 script = ExtResource( 12 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -53,43 +52,47 @@ margin_left = -3.13861
 margin_top = 5.04279
 margin_right = 118.861
 margin_bottom = 229.043
-texture_pressed = ExtResource( 4 )
-texture_hover = ExtResource( 4 )
+texture_pressed = ExtResource( 10 )
+texture_hover = ExtResource( 10 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="continue" type="Button" parent="."]
-margin_left = 255.305
-margin_top = 150.191
-margin_right = 386.305
-margin_bottom = 348.191
+margin_left = 255.0
+margin_top = 150.0
+margin_right = 386.0
+margin_bottom = 375.0
 rect_scale = Vector2( 0.592358, 0.427426 )
-icon = ExtResource( 7 )
-align = 0
+icon = ExtResource( 11 )
 script = ExtResource( 3 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="continue texture" type="TextureButton" parent="continue"]
 margin_left = 4.96573
-margin_top = -8.78394
+margin_top = -11.1235
 margin_right = 127.966
-margin_bottom = 234.216
-texture_pressed = ExtResource( 5 )
-texture_hover = ExtResource( 5 )
+margin_bottom = 231.876
+texture_pressed = ExtResource( 8 )
+texture_hover = ExtResource( 8 )
+stretch_mode = 5
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="Settings" type="Button" parent="."]
+visible = false
 margin_left = 135.0
 margin_top = 262.0
 margin_right = 266.0
-margin_bottom = 460.0
+margin_bottom = 494.0
 rect_scale = Vector2( 0.592358, 0.427426 )
-icon = ExtResource( 8 )
+icon = ExtResource( 5 )
 align = 0
 script = ExtResource( 15 )
 __meta__ = {
@@ -101,19 +104,19 @@ margin_left = 1.92589
 margin_top = 5.04279
 margin_right = 124.926
 margin_bottom = 229.043
-texture_pressed = ExtResource( 9 )
-texture_hover = ExtResource( 9 )
+texture_pressed = ExtResource( 4 )
+texture_hover = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="exit" type="Button" parent="."]
-margin_left = 258.42
-margin_top = 261.515
-margin_right = 389.42
-margin_bottom = 459.515
+margin_left = 258.0
+margin_top = 262.0
+margin_right = 389.0
+margin_bottom = 495.0
 rect_scale = Vector2( 0.592358, 0.427426 )
-icon = ExtResource( 11 )
+icon = ExtResource( 9 )
 align = 0
 script = ExtResource( 14 )
 __meta__ = {
@@ -125,9 +128,10 @@ margin_left = 3.62582
 margin_top = -12.4978
 margin_right = 126.626
 margin_bottom = 230.502
-texture_pressed = ExtResource( 10 )
-texture_hover = ExtResource( 10 )
+texture_pressed = ExtResource( 7 )
+texture_hover = ExtResource( 7 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
