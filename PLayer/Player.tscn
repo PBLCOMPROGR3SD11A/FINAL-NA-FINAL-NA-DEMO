@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Hand invaders/hands4.png" type="Texture" id=1]
+[ext_resource path="res://PLayer/Player.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 47.2378, 18.2522 )
+
+[node name="Player" type="Area2D"]
+script = ExtResource( 2 )
+speed = 250.0
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 1.51544, 1.14763 )
+texture = ExtResource( 1 )
+hframes = 3
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.0707092, 5.56067 )
+shape = SubResource( 1 )

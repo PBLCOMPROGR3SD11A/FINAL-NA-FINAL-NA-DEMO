@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Hand invaders/Bacterias.png" type="Texture" id=1]
+[ext_resource path="res://MEteor/MEteorBIg.gd" type="Script" id=2]
+
+[node name="MEteorBIg" type="Area2D" groups=[
+"Damageable",
+]]
+script = ExtResource( 2 )
+minSpeed = 50.0
+maxSpeed = 80.0
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 4.3067, 5.92675 )
+scale = Vector2( 0.0272246, 0.0199227 )
+texture = ExtResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( -14.4182, -38.153 )
+polygon = PoolVector2Array( 29.3471, -7.01211, 7.9284, 5.5871, -1.521, 23.856, 6.66848, 33.3054, 19.8977, 38.3451, 4.77861, 47.1645, -13.4903, 54.0941, -22.3097, 58.5038, -26.0895, 82.4423, -12.8603, 89.3718, -5.30077, 93.1516, 10.4483, 94.4115, 24.3074, 90.6318, 38.1665, 76.7726, 30.607, 54.0941, 17.3778, 49.6843, 39.4264, 38.975, 53.9155, 34.5653, 65.2548, 23.226, 63.3649, 8.10694, 53.2856, -0.712505, 43.8362, -3.86231 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+position = Vector2( 8.68985, 5.52615 )
+scale = Vector2( 7.48222, 5.7424 )
+[connection signal="area_entered" from="." to="." method="_on_MEteorBIg_area_entered"]
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
