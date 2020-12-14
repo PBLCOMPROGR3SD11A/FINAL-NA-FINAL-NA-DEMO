@@ -641,7 +641,7 @@ extents = Vector3( 1.11991, 1.93843, 0.125361 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.034173, 6.66351, 0.574123 )
 
 [node name="Camera2" parent="." index="0" instance=ExtResource( 13 )]
-transform = Transform( 0.806782, -0.295182, 0.51183, 0.0167172, 0.877319, 0.479617, -0.590612, -0.37839, 0.71274, 23.5998, 43.6312, 47.4555 )
+transform = Transform( 0.806782, -0.295182, 0.51183, 0.0167172, 0.877319, 0.479616, -0.590612, -0.37839, 0.71274, 23.5998, 43.6312, 47.4555 )
 
 [node name="Light" parent="." index="1"]
 visible = false
@@ -1039,4 +1039,8 @@ next_scene_path = "res://Livingroom.tscn"
 [node name="CollisionShape" type="CollisionShape" parent="Door" index="0"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11.0534, 14.9887, 28.8465 )
 shape = SubResource( 26 )
+
+[node name="OmniLight" type="OmniLight" parent="." index="19"]
+transform = Transform( 0.93517, -0.231685, -0.267918, 0.353629, 0.567753, 0.743373, -0.0201169, -0.789923, 0.612876, 2.93459, 0, 7.41154 )
+omni_range = 80.0
 [connection signal="body_entered" from="Door" to="Door" method="_on_Door_body_entered"]
