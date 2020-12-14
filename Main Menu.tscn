@@ -1,10 +1,11 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Main menu/baclground.png" type="Texture" id=1]
 [ext_resource path="res://scripts/Main Menu.gd" type="Script" id=2]
-[ext_resource path="res://continuebutton.gd" type="Script" id=3]
+[ext_resource path="res://scripts/settingsbutton.gd" type="Script" id=3]
 [ext_resource path="res://Main menu/settings.png" type="Texture" id=4]
 [ext_resource path="res://Main menu/settingsn.png" type="Texture" id=5]
+[ext_resource path="res://Main menu/playn.png" type="Texture" id=6]
 [ext_resource path="res://Main menu/exit.png" type="Texture" id=7]
 [ext_resource path="res://Main menu/continue.png" type="Texture" id=8]
 [ext_resource path="res://Main menu/exitn.png" type="Texture" id=9]
@@ -13,9 +14,9 @@
 [ext_resource path="res://scripts/playbutton.gd" type="Script" id=12]
 [ext_resource path="res://Music/button.wav" type="AudioStream" id=13]
 [ext_resource path="res://scripts/exitbutton.gd" type="Script" id=14]
-[ext_resource path="res://settingbutton.gd" type="Script" id=15]
+[ext_resource path="res://scripts/continuebutton.gd" type="Script" id=15]
 
-[node name="Node2D" type="Node2D"]
+[node name="MainMenu" type="Node2D"]
 script = ExtResource( 2 )
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
@@ -40,6 +41,7 @@ margin_top = 150.0
 margin_right = 266.0
 margin_bottom = 374.0
 rect_scale = Vector2( 0.592358, 0.427426 )
+icon = ExtResource( 6 )
 align = 0
 script = ExtResource( 12 )
 __meta__ = {
@@ -66,7 +68,7 @@ margin_right = 386.0
 margin_bottom = 375.0
 rect_scale = Vector2( 0.592358, 0.427426 )
 icon = ExtResource( 11 )
-script = ExtResource( 3 )
+script = ExtResource( 15 )
 __meta__ = {
 "_edit_lock_": true,
 "_edit_use_anchors_": false
@@ -86,7 +88,6 @@ __meta__ = {
 }
 
 [node name="Settings" type="Button" parent="."]
-visible = false
 margin_left = 135.0
 margin_top = 262.0
 margin_right = 266.0
@@ -94,8 +95,9 @@ margin_bottom = 494.0
 rect_scale = Vector2( 0.592358, 0.427426 )
 icon = ExtResource( 5 )
 align = 0
-script = ExtResource( 15 )
+script = ExtResource( 3 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -107,6 +109,7 @@ margin_bottom = 229.043
 texture_pressed = ExtResource( 4 )
 texture_hover = ExtResource( 4 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -120,6 +123,7 @@ icon = ExtResource( 9 )
 align = 0
 script = ExtResource( 14 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -135,14 +139,9 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="BUTTONwav" type="AudioStreamPlayer" parent="."]
+[node name="hitsound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 13 )
-autoplay = true
-[connection signal="playButton" from="play" to="." method="_on_play_playButton"]
-[connection signal="pressed" from="play" to="." method="_on_play_pressed"]
-[connection signal="continueButton" from="continue" to="." method="_on_continue_continueButton"]
-[connection signal="pressed" from="continue" to="." method="_on_continue_pressed"]
-[connection signal="pressed" from="Settings" to="." method="_on_Settings_pressed"]
-[connection signal="settingButton" from="Settings" to="." method="_on_Settings_settingButton"]
-[connection signal="exitButton" from="exit" to="exit" method="_on_exit_exitButton"]
-[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]
+[connection signal="mouse_entered" from="play" to="." method="_on_play_mouse_entered"]
+[connection signal="mouse_entered" from="continue" to="." method="_on_continue_mouse_entered"]
+[connection signal="mouse_entered" from="Settings" to="." method="_on_Settings_mouse_entered"]
+[connection signal="mouse_entered" from="exit" to="." method="_on_exit_mouse_entered"]
