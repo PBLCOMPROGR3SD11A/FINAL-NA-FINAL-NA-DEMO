@@ -137,6 +137,12 @@ exit={
  ]
 }
 
+[layer_names]
+
+3d_physics/layer_1="Player"
+3d_physics/layer_2="Door"
+3d_physics/layer_3="World"
+
 [physics]
 
 common/physics_fps=80
