@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/7HW813IBC15HV81XR76FCMW7L (1).glb-ffa15bef9a3fb6a3a1e81b625a47ede4.scn"
+path="res://.import/Soldout.glb-172e4d2198c0731da2fc4156c1a85a81.scn"
 
 [deps]
 
-source_file="res://Environments/Department Store/Indiv assets/sold/7HW813IBC15HV81XR76FCMW7L (1).glb"
-dest_files=[ "res://.import/7HW813IBC15HV81XR76FCMW7L (1).glb-ffa15bef9a3fb6a3a1e81b625a47ede4.scn" ]
+source_file="res://Environments/Department Store/Indiv assets/sold/Soldout.glb"
+dest_files=[ "res://.import/Soldout.glb-172e4d2198c0731da2fc4156c1a85a81.scn" ]
 
 [params]
 
