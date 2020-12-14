@@ -1,6 +1,10 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Environments/Department Store/DepartmentGBFILE.glb" type="PackedScene" id=1]
+[ext_resource path="res://Environments/Department Store/Indiv assets/sfam/Sfam.glb" type="PackedScene" id=2]
+[ext_resource path="res://Environments/Department Store/Indiv assets/Faceshield/FaceshieldGB.glb" type="PackedScene" id=3]
+[ext_resource path="res://Environments/Department Store/Indiv assets/wateris2big/Water Bottle GB (1).glb" type="PackedScene" id=4]
+[ext_resource path="res://Environments/Department Store/Indiv assets/Wine bottle/bottle.glb" type="PackedScene" id=5]
 
 [sub_resource type="ConcavePolygonShape" id=1]
 data = PoolVector3Array( -1.3726, 0.0099, -3.5441, 1.3726, 1.8176, -3.5441, -1.3726, 1.8176, -3.5441, -1.3726, 0.0099, -3.5441, 1.3726, 0.0099, -3.5441, 1.3726, 1.8176, -3.5441, 1.3726, 1.8176, -1.3726, 1.3726, 0.0099, -3.5441, 1.3726, 0.0099, -1.3726, 1.3726, 1.8176, -1.3726, 1.3726, 1.8176, -3.5441, 1.3726, 0.0099, -3.5441, -1.3726, 0.0099, -1.3726, -1.3726, 1.8176, -3.5441, -1.3726, 1.8176, -1.3726, -1.3726, 0.0099, -1.3726, -1.3726, 0.0099, -3.5441, -1.3726, 1.8176, -3.5441, -3.7861, 1.8176, -1.3726, -1.3726, 0.0099, -1.3726, -3.7861, 0.0099, -1.3726, -3.7861, 1.8176, -1.3726, -1.3726, 1.8176, -1.3726, -1.3726, 0.0099, -1.3726, -3.7861, 1.8176, 3.0429, -3.7861, 0.0099, -1.3726, -3.7861, 0.0099, 3.0429, -3.7861, 1.8176, 3.0429, -3.7861, 1.8176, -1.3726, -3.7861, 0.0099, -1.3726, 3.8877, 0.0099, -1.3726, 3.8877, 1.8176, 3.0429, 3.8877, 1.8176, -1.3726, 3.8877, 0.0099, -1.3726, 3.8877, 0.0099, 3.0429, 3.8877, 1.8176, 3.0429, 1.3726, 0.0099, -1.3726, 3.8877, 1.8176, -1.3726, 1.3726, 1.8176, -1.3726, 1.3726, 0.0099, -1.3726, 3.8877, 0.0099, -1.3726, 3.8877, 1.8176, -1.3726 )
@@ -75,3 +79,81 @@ shape = SubResource( 8 )
 
 [node name="CollisionShape" type="CollisionShape" parent="Shelves001/StaticBody" index="0"]
 shape = SubResource( 9 )
+
+[node name="Water Bottle GB (1)" parent="." index="20" instance=ExtResource( 4 )]
+transform = Transform( 0.672746, 0, 0, 0, 0.618202, 0.0291645, 0, -0.0260651, 0.552504, 0.65423, 2.28527, 18.7305 )
+
+[node name="Water Bottle GB (1)4" parent="Water Bottle GB (1)" index="0" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 3.72529e-09, 0, 3.72529e-09, 1, -7.00418, -0.0685313, -4.64858 )
+
+[node name="Water Bottle GB (1)3" parent="Water Bottle GB (1)" index="4" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 3.72529e-09, 0, 3.72529e-09, 1, -5.20204, 0.222338, -2.54909 )
+
+[node name="Water Bottle GB (1)2" parent="Water Bottle GB (1)" index="5" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 3.72529e-09, 0, 3.72529e-09, 1, -2.66224, 0.0558717, -1.18432 )
+
+[node name="Water Bottle GB (1)5" parent="Water Bottle GB (1)" index="6" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 3.72529e-09, 0, 3.72529e-09, 1, -8.47033, -0.190985, -6.95023 )
+
+[node name="Water Bottle GB (1)6" parent="Water Bottle GB (1)" index="7" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 3.72529e-09, 0, 3.72529e-09, 1, -9.01921, -0.340202, -9.59941 )
+
+[node name="bottle" parent="." index="21" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 0.998889, 0.0471239, 0, -0.0471239, 0.998889, 2.32181, 2.77539, 18.305 )
+
+[node name="bottle4" parent="bottle" index="0" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.09372, 0.114626, -2.42974 )
+
+[node name="bottle2" parent="bottle" index="5" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.44435, 0.0093832, -0.198895 )
+
+[node name="bottle3" parent="bottle" index="6" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.85405, 0.059001, -1.25065 )
+
+[node name="bottle5" parent="bottle" index="7" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.11541, 0.0731328, -3.58501 )
+
+[node name="bottle6" parent="." index="22" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 0.998889, 0.0471239, 0, -0.0471239, 0.998889, 7.59142, 2.53283, 13.3237 )
+
+[node name="Sfam2" parent="." index="23" instance=ExtResource( 2 )]
+transform = Transform( 0.239903, 0.0154162, -0.970674, 0.033337, 0.999153, 0.0241078, 0.970224, -0.0381429, 0.239186, -22.2032, 7.71596, 10.7648 )
+
+[node name="Sfam" parent="Sfam2" index="3" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 7.45058e-09, 1, 9.31323e-10, 1.49012e-08, -9.31323e-10, 1, 0.779429, 0.111917, -2.74956 )
+
+[node name="Sfam6" parent="." index="24" instance=ExtResource( 2 )]
+transform = Transform( 0.239903, 0.0154162, -0.970674, 0.033337, 0.999153, 0.0241078, 0.970224, -0.0381429, 0.239186, -29.4855, 7.71596, 10.7648 )
+
+[node name="Sfam" parent="Sfam6" index="3" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 7.45058e-09, 1, 9.31323e-10, 1.49012e-08, -9.31323e-10, 1, 0.779429, 0.111917, -2.74956 )
+
+[node name="Sfam7" parent="." index="25" instance=ExtResource( 2 )]
+transform = Transform( 0.239903, 0.0154162, -0.970674, 0.033337, 0.999153, 0.0241078, 0.970224, -0.0381429, 0.239186, -29.4855, 4.31461, 11.3459 )
+
+[node name="Sfam" parent="Sfam7" index="3" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 7.45058e-09, 1, 9.31323e-10, 1.49012e-08, -9.31323e-10, 1, 0.779429, 0.111917, -2.74956 )
+
+[node name="Sfam3" parent="." index="26" instance=ExtResource( 2 )]
+transform = Transform( 0.239903, 0.0154162, -0.970674, 0.033337, 0.999153, 0.0241078, 0.970224, -0.0381429, 0.239186, -22.2032, 4.31994, 11.6541 )
+
+[node name="Sfam" parent="Sfam3" index="3" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 7.45058e-09, 1, 9.31323e-10, 1.49012e-08, -9.31323e-10, 1, 0.779429, 0.111917, -2.74956 )
+
+[node name="Sfam4" parent="." index="27" instance=ExtResource( 2 )]
+transform = Transform( 0.239903, 0.0154162, -0.970674, 0.033337, 0.999153, 0.0241078, 0.970224, -0.0381429, 0.239186, -22.2032, 0.698116, 11.964 )
+
+[node name="Sfam" parent="Sfam4" index="3" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 7.45058e-09, 1, 9.31323e-10, 1.49012e-08, -9.31323e-10, 1, 0.779429, 0.111917, -2.74956 )
+
+[node name="Sfam5" parent="." index="28" instance=ExtResource( 2 )]
+transform = Transform( 0.239903, 0.0154162, -0.970674, 0.033337, 0.999153, 0.0241078, 0.970224, -0.0381429, 0.239186, -29.5733, 0.652922, 11.9058 )
+
+[node name="Sfam" parent="Sfam5" index="3" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 7.45058e-09, 1, 9.31323e-10, 1.49012e-08, -9.31323e-10, 1, 0.779429, 0.111917, -2.74956 )
+
+[node name="FaceshieldGB" parent="." index="29" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.417, 10.5752, 33.7845 )
+
+[node name="bottle8" parent="." index="30" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 0.998889, 0.0471239, 0, -0.0471239, 0.998889, 8.25736, 2.26095, 11.841 )
