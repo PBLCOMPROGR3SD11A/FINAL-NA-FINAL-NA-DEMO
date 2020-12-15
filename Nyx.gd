@@ -52,5 +52,9 @@ func get_input(_delta):
 	velocity += gravity * _delta
 	velocity = move_and_slide(velocity, Vector3.UP)
 
+var inventory_resource = load("res://Inventory.gd")
+var inventory = inventory_resource.new()
+
+
 #func _on_AnimationPlayer_animation_started(anim_name):
 	#get_tree().change_scene("res://Bathroom.tscn")

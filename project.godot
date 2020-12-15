@@ -8,16 +8,32 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Node",
+"class": "Inventory",
+"language": "GDScript",
+"path": "res://Inventory.gd"
+}, {
+"base": "Resource",
+"class": "ItemResource",
+"language": "GDScript",
+"path": "res://Items.gd"
+} ]
 _global_script_class_icons={
-
+"Inventory": "",
+"ItemResource": ""
 }
 
 [application]
 
 config/name="Nyx Epiviosi"
-run/main_scene="res://Livingroom.tscn"
+run/main_scene="res://Main Menu.tscn"
 config/icon="res://Nyx_Epiviosi_Icon.png"
+
+[autoload]
+
+ItemDatabase="*res://Managers/Item_Database.gd"
+GameManager="*res://Managers/Game_Manager.gd"
 
 [display]
 

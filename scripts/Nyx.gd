@@ -48,8 +48,3 @@ func get_input(_delta):
 	velocity.y = y
 	velocity += gravity * _delta
 	velocity = move_and_slide(velocity, Vector3.UP)
-
-#func _ready():
-	#self.next_room = player_spawn
-#func _on_AnimationPlayer_animation_started(anim_name):
-	#get_tree().change_scene("res://Bathroom.tscn")
