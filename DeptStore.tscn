@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://Environments/Department Store/DepartmentGBFILE.glb" type="PackedScene" id=1]
 [ext_resource path="res://Environments/Department Store/Indiv assets/sfam/Sfam.glb" type="PackedScene" id=2]
@@ -18,6 +18,7 @@
 [ext_resource path="res://Environments/Department Store/Indiv assets/Phone/Phone.glb" type="PackedScene" id=16]
 [ext_resource path="res://Environments/Department Store/Indiv assets/SprayPaint/spraypaintGB.glb" type="PackedScene" id=17]
 [ext_resource path="res://Camera.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Nyx.tscn" type="PackedScene" id=19]
 
 [sub_resource type="ConcavePolygonShape" id=1]
 data = PoolVector3Array( -1.3726, 0.0099, -3.5441, 1.3726, 1.8176, -3.5441, -1.3726, 1.8176, -3.5441, -1.3726, 0.0099, -3.5441, 1.3726, 0.0099, -3.5441, 1.3726, 1.8176, -3.5441, 1.3726, 1.8176, -1.3726, 1.3726, 0.0099, -3.5441, 1.3726, 0.0099, -1.3726, 1.3726, 1.8176, -1.3726, 1.3726, 1.8176, -3.5441, 1.3726, 0.0099, -3.5441, -1.3726, 0.0099, -1.3726, -1.3726, 1.8176, -3.5441, -1.3726, 1.8176, -1.3726, -1.3726, 0.0099, -1.3726, -1.3726, 0.0099, -3.5441, -1.3726, 1.8176, -3.5441, -3.7861, 1.8176, -1.3726, -1.3726, 0.0099, -1.3726, -3.7861, 0.0099, -1.3726, -3.7861, 1.8176, -1.3726, -1.3726, 1.8176, -1.3726, -1.3726, 0.0099, -1.3726, -3.7861, 1.8176, 3.0429, -3.7861, 0.0099, -1.3726, -3.7861, 0.0099, 3.0429, -3.7861, 1.8176, 3.0429, -3.7861, 1.8176, -1.3726, -3.7861, 0.0099, -1.3726, 3.8877, 0.0099, -1.3726, 3.8877, 1.8176, 3.0429, 3.8877, 1.8176, -1.3726, 3.8877, 0.0099, -1.3726, 3.8877, 0.0099, 3.0429, 3.8877, 1.8176, 3.0429, 1.3726, 0.0099, -1.3726, 3.8877, 1.8176, -1.3726, 1.3726, 1.8176, -1.3726, 1.3726, 0.0099, -1.3726, 3.8877, 0.0099, -1.3726, 3.8877, 1.8176, -1.3726 )
@@ -409,3 +410,6 @@ visible = false
 [node name="OmniLight" type="OmniLight" parent="." index="37"]
 transform = Transform( 1, 4.27525e-05, -1.98332e-05, -4.11503e-05, 0.997202, 0.0747515, 2.29735e-05, -0.0747515, 0.997202, 1.71128, 30.2033, 27.6069 )
 omni_range = 140.0
+
+[node name="Nyx Walk GB" parent="." index="38" instance=ExtResource( 19 )]
+transform = Transform( -4, 0, -1.30337e-06, 0, 4, 0, 1.30337e-06, 0, -4, 2.04569, 1.43051e-06, 30.6965 )
